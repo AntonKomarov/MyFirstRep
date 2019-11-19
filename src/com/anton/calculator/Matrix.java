@@ -19,6 +19,7 @@ public class Matrix extends Var{
     }
 
     public Matrix(Matrix matrix1) {
+        this.matrix = matrix1.matrix;
     }
 
     @Override
