@@ -16,6 +16,10 @@ public class Runner {
         Var vector2 = new Vector("1,2,6");
         Var vector3 = new Vector(vector1);
 
+        System.out.println(vector1);
+        System.out.println(vector2);
+        System.out.println(vector3);
+
 
         Matrix matrix1 = new Matrix(new double[][]{{1,2}, {3,4}});
         Var matrix2 = new Matrix("1,2,3,4");

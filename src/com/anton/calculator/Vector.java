@@ -1,6 +1,7 @@
 package com.anton.calculator;
 
 import java.util.Arrays;
+import java.util.regex.Pattern;
 
 public class Vector extends Var{
 
@@ -25,8 +26,13 @@ public class Vector extends Var{
 
     @Override
     public String toString(){
-
-
-        return "This Vector constructor";
+        StringBuilder str = new StringBuilder("{");
+        String delimiter = "";
+        for (double element : this.vector) {
+            str.append(delimiter).append(element);
+            delimiter = ", ";
+        }
+        str.append("}");
+        return str.toString();
     }
 }
