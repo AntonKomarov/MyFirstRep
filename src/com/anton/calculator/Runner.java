@@ -7,6 +7,10 @@ public class Runner {
         Var scalar2 = new Scalar("3.1415");
         Var scalar3 = new Scalar(scalar1);
 
+        System.out.println(scalar1);
+        System.out.println(scalar2);
+        System.out.println(scalar3);
+
 
         Vector vector1 = new Vector(new double[]{1,2,4});
         Var vector2 = new Vector("1,2,6");

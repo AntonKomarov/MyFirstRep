@@ -22,7 +22,7 @@ public class Scalar extends Var{
 
     @Override
     public String toString(){
-        return "This Scalar constructor";
+        return String.valueOf(this.scalar);
     }
 
 
