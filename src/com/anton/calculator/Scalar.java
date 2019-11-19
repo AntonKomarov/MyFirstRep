@@ -2,22 +2,22 @@ package com.anton.calculator;
 
 public class Scalar extends Var{
 
-    private double value;
+    private double scalar;
 
-    public double getValue() {
-        return value;
+    public double getScalar() {
+        return scalar;
     }
 
     Scalar(double value) {
-        this.value = value;
+        this.scalar = value;
     }
 
     Scalar(Scalar scalar) {
-        this.value = scalar.value;
+        this.scalar = scalar.scalar;
     }
 
     Scalar(String strScalar) {
-        this.value = Double.parseDouble(strScalar);
+        this.scalar = Double.parseDouble(strScalar);
     }
 
     @Override
