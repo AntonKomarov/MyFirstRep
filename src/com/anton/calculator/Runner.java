@@ -9,7 +9,7 @@ public class Runner {
 
 
         Vector vector1 = new Vector(new double[]{1,2,4});
-        Var vector2 = new Vector("1,2,4");
+        Var vector2 = new Vector("1,2,6");
         Var vector3 = new Vector(vector1);
 
 

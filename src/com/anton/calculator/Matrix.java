@@ -4,11 +4,11 @@ public class Matrix extends Var{
 
     private double[][] matrix;
 
-    public Matrix(double[][] matrix) {
+    Matrix(double[][] matrix) {
         this.matrix = matrix;
     }
 
-    public Matrix(String strMatrix) {
+    Matrix(String strMatrix) {
         String[] strings = strMatrix.split(",");
         this.matrix = new double[strings.length][strings.length];
         for (int i = 0; i < this.matrix.length; i++) {
@@ -18,7 +18,7 @@ public class Matrix extends Var{
         }
     }
 
-    public Matrix(Matrix matrix1) {
+    Matrix(Matrix matrix1) {
         this.matrix = matrix1.matrix;
     }
 
