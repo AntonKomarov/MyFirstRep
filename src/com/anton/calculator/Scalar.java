@@ -18,8 +18,11 @@ public class Scalar extends Var{
 
     Scalar(String strScalar) {
         this.value = Double.parseDouble(strScalar);
+    }
 
-
+    @Override
+    public String toString(){
+        return "This Scalar constructor";
     }
 
 
