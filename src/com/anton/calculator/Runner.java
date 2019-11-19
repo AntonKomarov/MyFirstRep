@@ -16,19 +16,5 @@ public class Runner {
         Matrix matrix1 = new Matrix(new double[][]{{1,2}, {3,4}});
         Var matrix2 = new Matrix("1,2,3,4");
         Var matrix3 = new Matrix(matrix1);
-
-        System.out.println(scalar1);
-        System.out.println(scalar2);
-        System.out.println(scalar3);
-
-        System.out.println(vector1);
-        System.out.println(vector2);
-        System.out.println(vector3);
-
-        System.out.println(matrix1);
-        System.out.println(matrix2);
-        System.out.println(matrix3);
-
-
     }
 }
