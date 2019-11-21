@@ -11,13 +11,17 @@ public class TaskA<T> implements List<T> {
     @Override
     public boolean add(T t) {
         if (size == elements.length)
-            elements = Arrays.copyOf(elements, size*3/2+1);
+            elements = Arrays.copyOf(elements, (size*3)/2+1);
         elements[size++] = t;
         return false;
     }
 
     @Override
     public void add(int i, T t) {
+        if (size == elements.length)
+            elements = Arrays.copyOf(elements, (size*3)/2+1);
+        System.arraycopy(elements,i, elements, i+1, size-i);
+
 
     }
 
