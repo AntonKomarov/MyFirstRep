@@ -13,7 +13,7 @@ public class TaskA<T> implements List<T> {
         if (size == elements.length)
             elements = Arrays.copyOf(elements, (size*3)/2+1);
         elements[size++] = t; // Добавление элемента в последнюю ячейку
-        return false;
+        return true;
     }
 
     @Override
