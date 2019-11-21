@@ -12,8 +12,8 @@ public class TaskA<T> implements List<T> {
     public boolean add(T t) {
         if (size == elements.length)
             elements = Arrays.copyOf(elements, (size*3)/2+1);
-        elements[size++] = t;
-        return false;
+        elements[size++] = t; // Добавление элемента в последнюю ячейку
+        return true;
     }
 
     @Override
@@ -21,10 +21,9 @@ public class TaskA<T> implements List<T> {
         if (size == elements.length)
             elements = Arrays.copyOf(elements, (size*3)/2+1);
         System.arraycopy(elements,i, elements, i+1, size-i);
-
-
+        elements[i] = t; // Добавление элемента в указанную позицию
+        size++;
     }
-
 
     // По правилу метод должен возвращасть удалённый элемент
     @Override
