@@ -64,7 +64,15 @@ public class TaskA<T> implements List<T> {
 
     @Override
     public String toString() {
-        return "TaskA{}";
+        StringBuilder sb = new StringBuilder("{");
+        String delimiter = "";
+
+        for (T element:elements){
+            sb.append(delimiter).append(element);
+            delimiter = ", ";
+        }
+        sb.append("}");
+        return sb.toString();
     }
 
 
