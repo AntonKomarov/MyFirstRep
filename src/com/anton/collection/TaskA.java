@@ -13,7 +13,7 @@ public class TaskA<T> implements List<T> {
         if (size == elements.length)
             elements = Arrays.copyOf(elements, (size*3)/2+1);
         elements[size++] = t; // Добавление элемента в последнюю ячейку
-        return true;
+        return false;
     }
 
     @Override
@@ -30,6 +30,7 @@ public class TaskA<T> implements List<T> {
     public T remove(int index) {
         T del = elements[index];
             System.arraycopy(elements, index+1, elements, index, size-1-index);
+            size--;
         return del;
     }
 
@@ -67,8 +68,8 @@ public class TaskA<T> implements List<T> {
         StringBuilder sb = new StringBuilder("{");
         String delimiter = "";
 
-        for (T element:elements){
-            sb.append(delimiter).append(element);
+        for (int i = 0; i < size; i++) {
+            sb.append(delimiter).append(elements[i]);
             delimiter = ", ";
         }
         sb.append("}");
