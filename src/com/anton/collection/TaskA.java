@@ -34,6 +34,30 @@ public class TaskA<T> implements List<T> {
     }
 
     @Override
+    public int indexOf(Object o) {
+        if (o == null){
+            for (int i = 0; i < size; i++) {
+                if (elements[i] == null)
+                    return i;
+            }
+        } else {
+            for (int i = 0; i < size; i++){
+                if(o.equals(elements[i]))
+                    return i;
+            }
+        }
+        return -1;
+    }
+
+    @Override
+    public boolean remove(Object o) {
+         int index = indexOf(o);
+         if (index >- 1)
+             remove(index);
+        return (index >- 1);
+    }
+
+    @Override
     public T get(int i) {
         return null;
     }
@@ -81,11 +105,6 @@ public class TaskA<T> implements List<T> {
     }
 
     @Override
-    public boolean remove(Object o) {
-        return false;
-    }
-
-    @Override
     public boolean containsAll(Collection<?> collection) {
         return false;
     }
@@ -118,11 +137,6 @@ public class TaskA<T> implements List<T> {
     @Override
     public T set(int i, T t) {
         return null;
-    }
-
-    @Override
-    public int indexOf(Object o) {
-        return 0;
     }
 
     @Override
