@@ -59,7 +59,7 @@ public class TaskA<T> implements List<T> {
 
     @Override
     public T get(int i) {
-        return null;
+        return elements[i];
     }
 
     @Override
