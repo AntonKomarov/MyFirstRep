@@ -26,7 +26,6 @@ public class TaskA1 {
         for (int i = 0; i < 20; i++) {
             task.grades.add(1 + (int) (Math.random() * 10));
         }
-
             System.out.print(task.grades);
     }
 }
