@@ -8,7 +8,6 @@ public class TaskA1 {
     private List<Integer> grades = new ArrayList<>();
 
     public void clearBad(List<Integer> grades){
-
 //        while (iterator.hasNext()){
 //            int grade = iterator.next();
 //            if (grade < 4)
@@ -16,7 +15,7 @@ public class TaskA1 {
 //        }
 
 //        grades.removeIf(i->(i<4));
-
+        
         grades.removeIf(grade -> grade < 4);
     }
 
