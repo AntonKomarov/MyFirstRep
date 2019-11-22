@@ -20,7 +20,10 @@ public class Runner {
 
         myList.remove("Start"); arList.remove("Start");
         myList.remove(3); arList.remove(3);
+        arList.set(2,"Set");
         System.out.println("myList:" + myList + "\narList:" + arList);
+
+
 
         System.out.println("myList:" + myList.get(0) + "\narList:" + arList.get(0));
     }

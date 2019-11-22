@@ -76,6 +76,14 @@ public class TaskA<T> implements List<T> {
         return sb.toString();
     }
 
+    @Override
+    public T set(int i, T t) {
+
+
+
+        return null;
+    }
+
 
 
 
@@ -141,11 +149,6 @@ public class TaskA<T> implements List<T> {
     @Override
     public void clear() {
 
-    }
-
-    @Override
-    public T set(int i, T t) {
-        return null;
     }
 
     @Override
