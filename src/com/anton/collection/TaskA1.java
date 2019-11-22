@@ -8,12 +8,14 @@ public class TaskA1 {
     private List<Integer> grades = new ArrayList<>();
 
     public void clearBad(List<Integer> grades){
-        Iterator<Integer> iterator = grades.iterator();
-        while (iterator.hasNext()){
-            int grade = iterator.next();
-            if (grade < 4)
-                iterator.remove();
-        }
+        
+//        while (iterator.hasNext()){
+//            int grade = iterator.next();
+//            if (grade < 4)
+//                iterator.remove();
+//        }
+
+        grades.removeIf(grade -> grade < 4);
     }
 
     public static void main(String[] args) {
