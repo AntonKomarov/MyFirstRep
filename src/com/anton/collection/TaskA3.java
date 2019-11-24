@@ -20,7 +20,7 @@ public class TaskA3 {
                 listArr.add(i);
             else  if (i == 0)
                 listArr.add(posZero, i);
-            else if (i > 0)
+            else
                 listArr.add(posZero++, i);
         }
         System.out.println(listArr);
