@@ -1,13 +1,12 @@
 package com.anton.collection;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class TaskA1 {
     private List<Integer> grades = new ArrayList<>();
 
-    public void clearBad(List<Integer> grades){
+    private void clearBad(List<Integer> grades){
 //        while (iterator.hasNext()){
 //            int grade = iterator.next();
 //            if (grade < 4)
