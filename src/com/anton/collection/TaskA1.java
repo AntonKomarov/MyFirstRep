@@ -15,16 +15,20 @@ public class TaskA1 {
 //        }
 
 //        grades.removeIf(i->(i<4));
-        
+
         grades.removeIf(grade -> grade < 4);
     }
 
     public static void main(String[] args) {
 
+
+
         TaskA1 task = new TaskA1();
         for (int i = 0; i < 20; i++) {
             task.grades.add(1 + (int) (Math.random() * 10));
         }
-            System.out.print(task.grades);
+        System.out.println(task.grades);
+        task.clearBad(task.grades);
+        System.out.println(task.grades);
     }
 }
