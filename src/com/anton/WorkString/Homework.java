@@ -1,4 +1,4 @@
-package com.anton.jd01_05_homework;
+package com.anton.WorkString;
 
 import java.util.Scanner;
 
