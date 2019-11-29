@@ -20,7 +20,7 @@ public class Threadd {
             // оозначаем как пустое множество, чтобы в блоке try мы заранее не знали чем закончится раота с DOS
             DataOutputStream dos = null;
             try {
-                dos = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(dir(TaskA.class)+"dataTaskA.bin")));
+                dos = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(dir(Threadd.class)+"dataThreadd.bin")));
                 for (int i = 0; i < 20; i++) {
                     // записываем в файловый поток
                     dos.writeInt((int) (Math.random() * 25));
@@ -41,10 +41,10 @@ public class Threadd {
                 // try с ресурсами, доступен с 7 версии Java
                 try (DataInputStream inp = new DataInputStream(
                         new BufferedInputStream(
-                                new FileInputStream(dir(TaskA.class) + "dataTaskA.bin")));
+                                new FileInputStream(dir(Threadd.class) + "dataThreadd.bin")));
                      // новый текстовый файловый вывод
                      PrintWriter out = new PrintWriter(
-                             new FileWriter(dir(TaskA.class) + "resultTaskA.txt"))
+                             new FileWriter(dir(Threadd.class) + "resultThreadd.txt"))
                 ) {
                     double sum = 0;
                     double count = 0;
