@@ -3,7 +3,6 @@ package com.anton.collection;
 import java.io.*;
 
 public class Threadd {
-
         // функция для определения текущей дериктории в котой находится наш класс
         private static String dir(Class<?> cl){
             // определяем где находится каталог проекта
@@ -39,36 +38,31 @@ public class Threadd {
                     }
                 }
             }
+                // try с ресурсами, доступен с 7 версии Java
+                try (DataInputStream inp = new DataInputStream(
+                        new BufferedInputStream(
+                                new FileInputStream(dir(TaskA.class) + "dataTaskA.bin")));
+                     // новый текстовый файловый вывод
+                     PrintWriter out = new PrintWriter(
+                             new FileWriter(dir(TaskA.class) + "resultTaskA.txt"))
+                ) {
+                    double sum = 0;
+                    double count = 0;
+                    // available() - есть ли что-то доступное в файле
+                    while (inp.available() > 0) {
+                        int i = inp.readInt();
+                        System.out.print(i + " ");
+                        out.print(i + " ");
+                        sum += i;
+                        count++;
 
-
-            // try с ресурсами, доступен с 7 версии Java
-            try(DataInputStream inp = new DataInputStream(
-                    new BufferedInputStream(
-                            new FileInputStream(dir(TaskA.class)+"dataTaskA.bin")));
-                // новый текстовый файловый вывод
-                PrintWriter out = new PrintWriter(
-                        new FileWriter(dir(TaskA.class)+ "resultTaskA.txt"))
-            ) {
-
-                double sum = 0;
-                double count = 0;
-                // available() - есть ли что-то доступное в файле
-                while (inp.available() > 0){
-                    int i = inp.readInt();
-                    System.out.print(i + " ");
-                    out.print(i + " ");
-                    sum += i;
-                    count++;
-
+                    }
+                    System.out.println("\navg=" + sum / count);
+                    out.print("\navg=" + sum / count);
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
-                System.out.println("\navg=" + sum/count);
-                out.print("\navg=" + sum/count);
-            } catch (IOException e) {
-                e.printStackTrace();
             }
-
-
             // TaskA.class - получаем структуру класса TaskA
-            // System.out.println(dir(TaskA.class));
-        }
+            // System.out.println(dir(TaskA.class))
 }
