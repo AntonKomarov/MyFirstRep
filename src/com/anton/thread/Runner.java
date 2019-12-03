@@ -3,9 +3,9 @@ package com.anton.thread;
 public class Runner {
     public static void main(String[] args) {
 
-        Thread maxPriority = new MyThread("MaxPriority");
+        Thread maxPriority =  new MyThread("MaxPriority");
         Thread normPriority = new MyThread("    NormPriority");
-        Thread minPriority = new MyThread("         MinPriority");
+        Thread minPriority =  new MyThread("        MinPriority");
 
         maxPriority.setPriority(Thread.MAX_PRIORITY);
         normPriority.setPriority(Thread.NORM_PRIORITY);
@@ -14,7 +14,5 @@ public class Runner {
         maxPriority.start();
         normPriority.start();
         minPriority.start();
-
-
     }
 }
