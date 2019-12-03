@@ -10,7 +10,7 @@ public class MyRunnable implements Runnable {
 
     @Override
     public void run() {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 40; i++) {
             System.out.println(name + " Цикл№ " + i);
             try {
                 Thread.sleep(7);
