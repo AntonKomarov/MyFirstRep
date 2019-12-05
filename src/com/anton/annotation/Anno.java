@@ -9,7 +9,9 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Anno {
-    int level();
+    int level(); // значение обязательно
+    boolean lazyLoad()default false; // значение в аннотации необязательно
 
-    String sqlRequest();
+    String sqlRequest(); // значение обязательно
+
 }
