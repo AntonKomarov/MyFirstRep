@@ -1,7 +1,5 @@
 package com.anton.LazyService;
 
-import com.sun.org.apache.bcel.internal.generic.LADD;
-
 @Service(name = "Lazy Service", lazyload = true)
 public class LazyService {
 
