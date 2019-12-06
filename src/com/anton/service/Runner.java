@@ -36,11 +36,9 @@ public class Runner {
                 }catch (Exception e){
                     e.printStackTrace();
                 }
-
             }
             else
-                System.out.println("Нет аннотации Service в классе" + cls.getName());
+                System.out.println("Нет аннотации Service в классе " + cls.getName());
         }
-
     }
 }
