@@ -3,7 +3,7 @@ package com.anton.LazyService;
 @Service(name = "Just simple service")
 public class SimpleService {
 
-    @Init()
+    @Init
     public void initialization(){
         System.out.println("Инициализация Simple Service запущена");
     }
