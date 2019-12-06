@@ -1,4 +1,4 @@
-package com.anton.LazyService;
+package com.anton.service;
 
 @Service(name = "Just simple service")
 public class SimpleService {

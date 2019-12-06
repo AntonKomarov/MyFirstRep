@@ -1,4 +1,4 @@
-package com.anton.LazyService;
+package com.anton.service;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
