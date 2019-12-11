@@ -25,7 +25,7 @@ public class Example extends Thread{
         }
         System.out.println("Step 1:" + init.get());
         State prev = init.getAndSet(State.INITIALIZED);
-        System.out.println("Step 2:" + init.get() + "prev" + prev);
+        System.out.println("Step 2:" + init.get() + " prev:" + prev);
         atomicCount.getAndAdd(1);
     }
 
