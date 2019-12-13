@@ -1,5 +1,6 @@
 package com.anton.collection;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.FileWriter;
 import java.io.PrintWriter;
@@ -10,12 +11,24 @@ import java.time.LocalDateTime;
                 Test.log("Hi");
             }
 
+            private static String getPath(Class<?> aClass){
+                return System.getProperty("user.dir")
+                        + File.separator + "src" + File.separator
+                        + aClass
+                        .getName()
+                        .replace(aClass.getSimpleName(), "")
+                        .replace(".", File.separator);
+
+            }
+
+
+            private static String filename = getPath(Test.class) + "log.txt";
 
             private static void log(String text){
                 PrintWriter out;
                 /*  Сначала откроем файл, в который будем писать ошибки */
                 try {
-                    out = new PrintWriter(new FileWriter("exceptions.log", true));
+                    out = new PrintWriter(new FileWriter(filename, true));
                 } catch (IOException ex) {
                     ex.printStackTrace();
                     return;
