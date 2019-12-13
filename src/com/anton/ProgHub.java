@@ -7,7 +7,6 @@ public class ProgHub  extends Thread{
 //    short[5] x2;
 //    short z2 [5];
     short [] z [][];
-//    short[] y2 = [5];
 
 //    Integer i [][] = (4, 5, 6)(1, 2, 3);
     int [] a = new int [15];
