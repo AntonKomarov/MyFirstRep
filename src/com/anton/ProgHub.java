@@ -1,7 +1,7 @@
 package com.anton;
 
 public class ProgHub  extends Thread{
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
         try {
             int i = new Integer(10); // boxing
             System.out.println(i);
