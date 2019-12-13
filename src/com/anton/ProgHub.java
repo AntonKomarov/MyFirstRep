@@ -2,16 +2,9 @@ package com.anton;
 
 public class ProgHub  extends Thread{
     private int x = 2;
-//    short x [];
     short[] y;
-//    short[5] x2;
-//    short z2 [5];
     short [] z [][];
-
-//    Integer i [][] = (4, 5, 6)(1, 2, 3);
     int [] a = new int [15];
-//    float f = new float[20];
-//    char [] c = "some string";
     Object o = new float[20];
 
 
