@@ -1,7 +1,5 @@
 package com.anton.jd02_01;
 
-import org.graalvm.compiler.debug.CSVUtil;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +10,7 @@ public class Buyer extends Thread implements IBuyer, IUseBacket {
 
     Double getTotalPrice() { return totalPrice; }
 
-    public void setTotalPrice(Double totalPrice) { this.totalPrice=totalPrice; }
+    private void setTotalPrice(Double totalPrice) { this.totalPrice=totalPrice; }
 
     private boolean pensioneer = false;
 
@@ -20,7 +18,6 @@ public class Buyer extends Thread implements IBuyer, IUseBacket {
         this.num = num;
         this.setName("Buyer №" + num + " ");
         if(num%8 == 0) this.pensioneer = true;
-        start();
     }
 
     @Override
@@ -40,8 +37,8 @@ public class Buyer extends Thread implements IBuyer, IUseBacket {
     public void chooseGoods() {
         try {
             System.out.println(this + "choosing goods");
-            if(pensioneer) { Randomize.sleep(Randomize.fromTo(750, 3000)); }
-            Thread.sleep(Randomize.fromTo(500, 2000)); // метод sleep() бросает ошибку
+            if(pensioneer) { Helper.sleep(Helper.fromTo(750, 3000)); }
+            Thread.sleep(Helper.fromTo(500, 2000)); // метод sleep() бросает ошибку
         } catch (InterruptedException e) {
             System.out.println(this + "некорректное завершение ожидания");
         }
@@ -73,7 +70,7 @@ public class Buyer extends Thread implements IBuyer, IUseBacket {
     @Override
     public void takeBacket() {
         try {
-            Thread.sleep(Randomize.fromTo(500, 2000));
+            Thread.sleep(Helper.fromTo(500, 2000));
             System.out.println(this + "take backet");
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -83,15 +80,15 @@ public class Buyer extends Thread implements IBuyer, IUseBacket {
     @Override
     public void putGoodsToBacket() {
         double price = 0;
-        int countOfGoods = Randomize.fromTo(1, 4);
-        int timeToPut = Randomize.fromTo(500, 2000);
-        if(pensioneer) timeToPut = Randomize.fromTo(750,3000);
+        int countOfGoods = Helper.fromTo(1, 4);
+        int timeToPut = Helper.fromTo(500, 2000);
+        if(pensioneer) timeToPut = Helper.fromTo(750,3000);
         for (int i = 0; i <countOfGoods ; i++) {
             Good good = Goods.getRandomGood();
             goodsInBacket.add(good+" for " + good.getPrice()+"$");
             price+=good.getPrice();
             System.out.println(this + " put to the basket " + good);
-            Randomize.sleep(timeToPut);
+            Helper.sleep(timeToPut);
         }
         setTotalPrice(price);
     }

@@ -1,8 +1,14 @@
 package com.anton.jd02_01;
 
 
-class Randomize {
-    private static final java.util.Random random = new java.util.Random(System.currentTimeMillis());
+import java.util.Random;
+
+class Helper {
+    private static final Random random = new java.util.Random(System.currentTimeMillis());
+
+    static int random(int max){
+        return fromTo(0, max);
+    }
 
     static int fromTo(int from, int to){
         return from + random.nextInt(to - from + 1);

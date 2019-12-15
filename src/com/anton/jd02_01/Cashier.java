@@ -14,7 +14,7 @@ public class Cashier implements Runnable {
         System.out.println(this + " cashier open");
         while((b = QueueBuyer.extractBuyer()) != null){
             System.out.println(this + " service " + b);
-            Randomize.sleep(Randomize.fromTo(2000, 5000));
+            Helper.sleep(Helper.fromTo(2000, 5000));
             System.out.println(b + " bought " + b.goodsInBacket);
             System.out.println(b + " total prise " + b.getTotalPrice() + "BIN");
             System.out.println(this + " finished service for " + b);

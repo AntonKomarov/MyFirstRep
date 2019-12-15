@@ -6,8 +6,7 @@ import java.util.List;
 public class Dispatcher extends Thread {
     static int kSpeed = 1000;
     static volatile int countBuyer = 0;
-    private static final int PLAN = 100;
-    static final Object Monitor = 0;
+    static final int PLAN = 100;
     static volatile int countCompeteBuyers = 0;
 
     static List<Thread> cashiers = new ArrayList<>();
@@ -20,7 +19,7 @@ public class Dispatcher extends Thread {
                 cashiers.add(cashier);
                 cashier.start();
             }
-            Randomize.sleep(1000);
+            Helper.sleep(1000);
         }
     }
 }

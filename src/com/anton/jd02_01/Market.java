@@ -1,21 +1,31 @@
 package com.anton.jd02_01;
 
-import java.util.ArrayDeque;
-import java.util.Queue;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Market {
-    private static int countBuyer = 0; // общий счётчик покупаетелей. Возникает проблема обращения к общему ресурсу
 
     public static void main(String[] args) throws InterruptedException {
-        Queue<Buyer> queue = new ArrayDeque<>();
-        while (countBuyer < 10){
-            Thread.sleep(1000); // ожидание 1 секунду
-            for (int i = 0; i < Randomize.fromTo(0,2); i++) {
-                countBuyer++;
-                if (countBuyer < 11){
-                    queue.add(new Buyer(countBuyer));
+        List<Thread> buyerList = new ArrayList<>();
+        System.out.println("Market opened");
+        new Dispatcher().start();
+        while (Dispatcher.countBuyer < Dispatcher.PLAN) {
+            int currentCount = Helper.random(2);
+                for (int j = 0; j <= currentCount; j++) {
+                    if (Dispatcher.countBuyer == Dispatcher.PLAN) {
+                        break;
+                    }
+                    Buyer buyer = new Buyer(++Dispatcher.countBuyer);
+                    buyerList.add(buyer);
+                    buyer.start();
+
                 }
-            }
+            Helper.sleep(1000);
         }
+        for(Thread buyer : buyerList){
+            buyer.join();
+        }
+        System.out.println("Market closed");
     }
 }
+
