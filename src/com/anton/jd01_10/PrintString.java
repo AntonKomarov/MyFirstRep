@@ -9,7 +9,8 @@ public class PrintString {
 
         Class<String> stringClassStructure = String.class;
         Method[] methodsStringClass = stringClassStructure.getDeclaredMethods();
-        System.out.println();
+        System.out.println(Bean.max(3,5));
+        System.out.println(Bean.max(3,5));
 
         for (Method stringClassMetod : methodsStringClass) {
             if (!Modifier.isStatic(stringClassMetod.getModifiers())) {
