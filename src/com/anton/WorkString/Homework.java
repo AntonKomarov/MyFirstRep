@@ -44,7 +44,5 @@ public class Homework {
                 System.out.printf("Число:%s Длинна = %d\n", element, element.length());
             }
         }
-
-
     }
 }
