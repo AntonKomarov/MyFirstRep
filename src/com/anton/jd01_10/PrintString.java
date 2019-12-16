@@ -11,6 +11,7 @@ public class PrintString {
         Method[] methodsStringClass = stringClassStructure.getDeclaredMethods();
         System.out.println(Bean.max(3,5));
         System.out.println(Bean.min(3,5));
+        System.out.println(Bean.avg(3,5));
 
         for (Method stringClassMetod : methodsStringClass) {
             if (!Modifier.isStatic(stringClassMetod.getModifiers())) {
