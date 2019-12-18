@@ -20,6 +20,6 @@ public class Task_02 {
 
 
     public static void main(String[] args) {
-        System.out.println("methd() returned " + method());
+        System.out.println("method() returned " + method());
     }
 }
