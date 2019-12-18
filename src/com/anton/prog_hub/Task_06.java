@@ -8,7 +8,9 @@ public class Task_06 {
         StringBuilder sb1 = new StringBuilder("test");
         StringBuilder sb2 = new StringBuilder("test");
 
-//        System.out.println(s2.charAt(s2.length()) == 'g');
+//        System.out.println(s2.charAt(s2.length()-1) == 'g'); // true
+//        System.out.println(sb1.equals(sb2)); // false. метод equals() не переопределен
+//        System.out.println(s1.equalsIgnoreCase(s2)); // true
 
         System.out.println(s1.equalsIgnoreCase(s2) && sb1.equals(sb2) && s2.charAt(s2.length()) == 'g');
     }
