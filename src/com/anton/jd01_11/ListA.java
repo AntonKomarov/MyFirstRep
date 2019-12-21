@@ -82,8 +82,7 @@ public class ListA<T> implements List<T> {
     }
 
 
-
-
+    
     @Override
     public int size() {
         return 0;
