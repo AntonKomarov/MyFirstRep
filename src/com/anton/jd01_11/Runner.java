@@ -43,7 +43,6 @@ public class Runner {
 
         System.out.println(myList.isEmpty());
         System.out.println(myList.size());
-        System.out.println(myList.contains("Second"));
 
         System.out.println("myList:" + myList.get(0) + "\narList:" + arList.get(0));
     }
