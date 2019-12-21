@@ -80,8 +80,6 @@ public class ListA<T> implements List<T> {
     public T set(int index, T t) {
     return null;
     }
-
-
     
     @Override
     public int size() {
