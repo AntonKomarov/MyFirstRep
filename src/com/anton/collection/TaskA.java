@@ -7,7 +7,6 @@ public class TaskA<T> implements List<T> {
     private T[] elements = (T[])new Object[] {};
     private int size = 0;
 
-
     @Override
     public boolean add(T t) {
         if (size == elements.length)
@@ -78,9 +77,6 @@ public class TaskA<T> implements List<T> {
 
     @Override
     public T set(int i, T t) {
-
-
-
         return null;
     }
 
