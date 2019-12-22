@@ -1,4 +1,4 @@
-package com.anton;
+package com.anton.collection;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
