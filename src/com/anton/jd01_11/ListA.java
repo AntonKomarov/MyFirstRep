@@ -6,7 +6,7 @@ public class ListA<T> implements List<T> {
 
     private T[] elements = (T[])new Object[] {};
     private int size = 0;
-    
+
     @Override
     public boolean add(T t) {
         if (size == elements.length)
