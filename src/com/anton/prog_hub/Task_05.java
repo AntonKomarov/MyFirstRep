@@ -1,6 +1,6 @@
 package com.anton.prog_hub;
 
-public class Task_05 extends A{
+ class Task_05 extends A{
     public int i = 1;
     public int getI(){
         return this.i;
