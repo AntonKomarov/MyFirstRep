@@ -8,7 +8,6 @@ public class Task_12 {
         ht.put("2", "2");
         ht.put("6", "1");
         ht.put("3", "3");
-        ht.put("4", "4");
 
         if(ht.contains("1")){
             System.out.println(ht.get("6"));
