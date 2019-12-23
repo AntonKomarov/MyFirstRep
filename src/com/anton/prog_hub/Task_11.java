@@ -2,10 +2,10 @@ package com.anton.prog_hub;
 
 
 class MyLink{
-    public MyLink(){
+     MyLink(){
         str = "New";
     }
-    public String str;
+     String str;
 }
 
 public class Task_11 {
