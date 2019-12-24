@@ -15,5 +15,9 @@ public class Runner {
         car = carCelector.getCar(RoadType.ROAD);
         car.drive();
         car.stop();
+
+        car = carCelector.getCar(RoadType.CITY);
+        car.drive();
+        car.stop();
     }
 }
