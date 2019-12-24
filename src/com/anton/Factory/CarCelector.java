@@ -1,6 +1,6 @@
 package com.anton.Factory;
 
-public class CarCelector {
+class CarCelector {
 
     Car getCar(RoadType roadType){
         Car car = null;
