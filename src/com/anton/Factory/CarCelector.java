@@ -18,5 +18,4 @@ class CarCelector {
         }
         return car;
     }
-
 }
