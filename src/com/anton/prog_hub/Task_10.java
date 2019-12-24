@@ -1,7 +1,7 @@
 package com.anton.prog_hub;
 
-class AA{
-    public void process(){
+class AA {
+    public void process() {
         System.out.println("A ");
     }
 }
