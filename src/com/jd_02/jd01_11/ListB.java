@@ -6,7 +6,7 @@ public class ListB <T> implements List <T> {
 
         private T[] elements = (T[]) new Object[1];
         private int size = 0;
-        
+
         @Override
         public int size() {
             return 0;
