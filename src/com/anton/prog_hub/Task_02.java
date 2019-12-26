@@ -17,8 +17,6 @@ public class Task_02 {
         }
         return -1;
     }
-
-
     public static void main(String[] args) {
         System.out.println("method() returned " + method());
     }
