@@ -7,7 +7,7 @@ public class Task_04 {
         (new Task_04()).doIt();
     }
 
-    void doIt() {
+    private void doIt() {
         System.out.println(total);
     }
 }
