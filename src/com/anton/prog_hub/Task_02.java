@@ -1,7 +1,7 @@
 package com.anton.prog_hub;
 
 public class Task_02 {
-    static int method(){
+    private static int method(){
         for (int i = 0; i < 5; i++) {
             System.out.println("i = " + i);
             try{
