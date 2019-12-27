@@ -5,7 +5,6 @@ public class Test {
         int x = 1;
         Integer y = new Integer(x);
         int [] z = {x};
-
         func(x, y, z);
         System.out.println(x);
         System.out.println(y);
