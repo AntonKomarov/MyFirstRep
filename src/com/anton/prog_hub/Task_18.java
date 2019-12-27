@@ -12,8 +12,6 @@ class Task_18 {
 
         a = b;
 //        b = a;
-        
-
     }
 }
 
