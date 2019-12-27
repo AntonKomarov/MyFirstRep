@@ -9,12 +9,12 @@ class Task_19 {
 
 class Children extends Task_19{
     int x = 0;
+    void printX(){
+        System.out.println(x);
+    }
     public static void main(String[] args) {
         Task_19 o = new Children();
         Children p = new Children();
-        System.out.println(o.x);
-        System.out.println(p.x);
-        p.printX();
-        new Children().printX();
+        o.printX();
     }
 }
