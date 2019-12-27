@@ -13,11 +13,10 @@ public class Task_16 {
         System.out.println("name: " + threeName + " leaves: " + leavesCount);
     }
 
-    Task_16(String name) {
+    private Task_16(String name) {
         this.threeName = name;
         System.out.println("String");
     }
-
 
     public static void main(String[] args) {
         Task_16 bj = new Task_16("first");
