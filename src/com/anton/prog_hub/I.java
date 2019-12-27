@@ -9,7 +9,7 @@ class Main implements I{
         int a = 5;
         test(++a);
     }
-    
+
     static void test(int a){
     a += EASY + a++;
         System.out.println(a);
