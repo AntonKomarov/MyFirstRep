@@ -9,7 +9,7 @@ public class Task_16 {
         System.out.println("int");
     }
 
-    Task_16() {
+    private Task_16() {
         System.out.println("name: " + threeName + " leaves: " + leavesCount);
     }
 
