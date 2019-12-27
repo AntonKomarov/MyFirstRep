@@ -16,5 +16,6 @@ public class Test {
     static void func(int x, Integer y, int[] z) {
         x++;
         y++;
+        z[0]++;
     }
 }
