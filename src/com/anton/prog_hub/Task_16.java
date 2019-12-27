@@ -1,7 +1,7 @@
 package com.anton.prog_hub;
 
 public class Task_16 {
-    int leavesCount;
+    private int leavesCount;
     private String threeName;
 
     Task_16(int leaves) {
