@@ -2,7 +2,7 @@ package com.anton.prog_hub;
 
 public class Task_16 {
     int leavesCount;
-    String threeName;
+    private String threeName;
 
     Task_16(int leaves) {
         this.leavesCount = leaves;
