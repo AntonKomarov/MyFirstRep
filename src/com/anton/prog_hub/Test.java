@@ -7,7 +7,6 @@ public class Test {
         int [] z = {x};
 
         func(x, y, z);
-
         System.out.println(x);
         System.out.println(y);
         System.out.println(z[0]);
