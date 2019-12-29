@@ -6,7 +6,7 @@ public class Task_23 {
         return false;
     }
 
-    public static boolean methodTwo(){
+    private static boolean methodTwo(){
         System.out.println("methdTwo");
         return true;
     }
