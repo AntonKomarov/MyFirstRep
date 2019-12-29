@@ -1,7 +1,7 @@
 package com.anton.prog_hub;
 
 public class Task_23 {
-    public static boolean methodOne(){
+    private static boolean methodOne(){
         System.out.println("methodOne");
         return false;
     }
