@@ -16,6 +16,7 @@ public class Task_23 {
         return true;
     }
     public static void main(String[] args) {
+        System.out.println(Task_23.methodOne() || Task_23.methodTwo());
 
     }
 }
