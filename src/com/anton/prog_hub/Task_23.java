@@ -11,7 +11,7 @@ public class Task_23 {
         return true;
     }
 
-    public static boolean methodThree(){
+    private static boolean methodThree(){
         System.out.println("methodThree");
         return true;
     }
