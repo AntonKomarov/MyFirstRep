@@ -15,7 +15,7 @@ public class Task_23 {
         System.out.println("methodThree");
         return true;
     }
-    
+
     public static void main(String[] args) {
         System.out.println(Task_23.methodOne() || Task_23.methodTwo());
 //        || Task_23.methodThree() || Task_23.methodOne());
