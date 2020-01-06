@@ -10,7 +10,6 @@ public class Task_23 {
         System.out.println("methodTwo");
         return true;
     }
-
     private static boolean methodThree(){
         System.out.println("methodThree");
         return true;
