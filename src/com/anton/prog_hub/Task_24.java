@@ -20,5 +20,6 @@ class Print2 extends Task_24 {
     public static void main(String[] args) {
       Task_24 t = new Task_24();
       Print2 p = new Print2();
+      t.print(p);
     }
 }
