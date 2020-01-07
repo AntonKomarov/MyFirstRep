@@ -10,7 +10,6 @@ class Task_24 {
     }
 }
 
-
 class Print2 extends Task_24 {
 
     void print () {
