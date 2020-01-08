@@ -4,6 +4,7 @@ public class Task27 {
 
     static class X{
         static String x = Y.y;
+
     }
 
     static class Y{
