@@ -11,7 +11,8 @@ public class Task27 {
     }
 
     public static void main(String[] args) throws Throwable {
-        Y.y = "0";
+        System.out.println(Y.y);
+        System.out.println(Y.y = "0");
         System.out.println(X.x);
     }
 }
