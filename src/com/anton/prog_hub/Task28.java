@@ -7,12 +7,11 @@ public class Task28 {
     }
 }
 
-public class Be extends Task28 {
+ class Be extends Task28 {
     int i = 1;
     public int increment() {
         return ++i;
     }
-
 
     public static void main(String[] args) {
         Task28 b = new Task28();
