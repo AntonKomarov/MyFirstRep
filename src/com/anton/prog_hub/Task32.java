@@ -8,6 +8,12 @@ public class Task32 {
     }
 
     public static void main(String[] args) {
-        
+        Task32 m = new Task32();
+        int anInt = 6;
+        m.print(anInt);
+    }
+
+    public void print(int anInt) {
+        System.out.println(anInt);
     }
 }
