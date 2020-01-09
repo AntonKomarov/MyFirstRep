@@ -19,10 +19,14 @@ class Pet2 extends Object{
 }
 
 class Cat2 extends Pet2{
-    int tailLength = 8;
+    int tailLength;
     int age;
     Cat2(int x, int y, int age){
+        // вызов конструктора базового класса
         super(x,y);
+        // инициализация переменных
+        this.tailLength = 8;
+        // вызов кода конструктора
         this.age = age;
     }
 }
