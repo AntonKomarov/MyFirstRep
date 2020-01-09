@@ -1,11 +1,12 @@
 package com.example;
 
-class Pet2 {
-    int x = 5;
-    int y = 5;
-    int weight = 10;
+class Pet2 extends Object{
+    int x;
+    int y;
+    int weight;
 
     Pet2(int x, int y) {
+        // ызов конструктора базового класса Object
         this.x = x;
         this.y = y;
     }
