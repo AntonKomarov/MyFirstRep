@@ -1,7 +1,7 @@
 package com.anton.prog_hub;
 
 public class Task33 {
-     static void printt(){
+      void printt(){
         System.out.println("Hello");
     }
 
@@ -12,9 +12,7 @@ public class Task33 {
 }
 
 class N extends Task33 {
-     static void printt(){
+      void printt(){
         System.out.println("Bye");
     }
-
-
 }
