@@ -6,16 +6,19 @@ public class Task33 {
     }
 
     public static void main(String[] args) {
-//        Task33 b = new N();
-//        Task33.printt(); // b.printt();
-        N n = new N();
-        n.printt(6);
+        Task33 b = new N();
+      b.printt(); // b.printt();
+
+//        N n = new N();
+//        n.printt(6);
     }
 }
 
 class N extends Task33 {
-      void printt(int i){
-          super.printt();
+    void tcp(){
+        System.out.println("something");
+    }
+       static void printt(){
         System.out.println("Bye");
     }
 }
