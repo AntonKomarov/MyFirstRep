@@ -5,4 +5,9 @@ public class Pet {
     int y = 5;
     int weight = 10;
 
+    Pet(int x, int y){
+        this.x = x;
+        this.y = y;
+    }
+
 }
