@@ -1,18 +1,21 @@
 package com.anton.prog_hub;
 
 public class Task33 {
-      void printt(){
+      static void printt(){
         System.out.println("Hello");
     }
 
     public static void main(String[] args) {
-        Task33 b = new N();
-        b.printt();
+//        Task33 b = new N();
+//        Task33.printt(); // b.printt();
+        N n = new N();
+        n.printt(6);
     }
 }
 
 class N extends Task33 {
-      void printt(){
+      void printt(int i){
+          super.printt();
         System.out.println("Bye");
     }
 }
