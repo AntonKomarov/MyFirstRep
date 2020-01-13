@@ -17,4 +17,9 @@ class Mediun extends Small{
 //        System.out.println("I'm not so big");
 //        return 5;
 //    }
+
+    protected Float growUp(float f){
+        System.out.println("I want to be bigger");
+        return 5f;
+    }
 }
