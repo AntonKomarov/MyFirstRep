@@ -2,7 +2,7 @@ package com.anton.prog_hub;
 
 public class Aaa {
     private double x = 2;
-    public static void multX(Aaa a, double n){
+    private static void multX(Aaa a, double n){
         a.setX(a.getX() * n);
     }
 
@@ -12,11 +12,11 @@ public class Aaa {
     private double getX() {
         return x;
     }
-    public static double trippleValue(double x){
+    private static double trippleValue(double x){
         x *= 3;
         return x;
     }
-    public static Aaa resetX(Aaa a){
+    private static Aaa resetX(Aaa a){
         a = new Aaa();
         return a;
     }
@@ -25,6 +25,7 @@ public class Aaa {
         int x = 3;
         System.out.println(trippleValue(x)); // x = 3
         System.out.println(x);
+
         Aaa anA = new Aaa();
         multX(anA, x); // x = 6
         resetX(anA);
