@@ -7,10 +7,13 @@ public class Aaa {
     }
 
     private void setX(double xn) {
-
+        x = xn;
     }
-
     private double getX() {
         return x;
     }
+    public static void trippleValue(double x){
+        
+    }
+
 }
