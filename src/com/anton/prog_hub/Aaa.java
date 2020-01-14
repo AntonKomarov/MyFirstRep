@@ -13,7 +13,11 @@ public class Aaa {
         return x;
     }
     public static void trippleValue(double x){
-        
+        x *= 3;
+    }
+    public static Aaa resetX(Aaa a){
+        a = new Aaa();
+        return a;
     }
 
 }
