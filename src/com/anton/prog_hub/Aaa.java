@@ -20,4 +20,13 @@ public class Aaa {
         return a;
     }
 
+    public static void main(String[] args) {
+        int x = 3;
+        trippleValue(x);
+        Aaa anA = new Aaa();
+        multX(anA, x);
+        resetX(anA);
+        x = 0;
+        System.out.println(anA.getX());
+    }
 }
