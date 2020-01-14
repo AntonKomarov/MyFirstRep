@@ -22,9 +22,10 @@ public class Aaa {
 
     public static void main(String[] args) {
         int x = 3;
-        trippleValue(x);
+        trippleValue(x); // x = 3
+        System.out.println(x);
         Aaa anA = new Aaa();
-        multX(anA, x);
+        multX(anA, x); // x = 6
         resetX(anA);
         x = 0;
         System.out.println(anA.getX());
