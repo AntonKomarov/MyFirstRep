@@ -12,8 +12,9 @@ public class Aaa {
     private double getX() {
         return x;
     }
-    public static void trippleValue(double x){
+    public static double trippleValue(double x){
         x *= 3;
+        return x;
     }
     public static Aaa resetX(Aaa a){
         a = new Aaa();
@@ -22,7 +23,7 @@ public class Aaa {
 
     public static void main(String[] args) {
         int x = 3;
-        trippleValue(x); // x = 3
+        System.out.println(trippleValue(x)); // x = 3
         System.out.println(x);
         Aaa anA = new Aaa();
         multX(anA, x); // x = 6
