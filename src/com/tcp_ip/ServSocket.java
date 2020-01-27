@@ -13,7 +13,7 @@ public class ServSocket {
         Socket socket = servSocket.accept()){
 
             Scanner scanner = new Scanner(socket.getInputStream()); // приходит поток данных. Информация пришла
-            PrintWriter writer = new PrintWriter(socket.getOutputStream()); // отправляем поток данных. Информация ушла
+            PrintWriter writer = new PrintWriter(socket.getOutputStream(), true); // отправляем поток данных. Информация ушла
 
             writer.write("hello");
 
