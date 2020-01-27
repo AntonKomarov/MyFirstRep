@@ -5,7 +5,7 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
-
+// необходимо подключить telnet
 public class ServSocket {
 
     public static void main(String[] args) throws IOException {
