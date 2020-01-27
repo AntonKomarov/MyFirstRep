@@ -15,6 +15,9 @@ public class ServSocket {
             Scanner scanner = new Scanner(socket.getInputStream()); // приходит поток данных. Информация пришла
             PrintWriter writer = new PrintWriter(socket.getOutputStream()); // отправляем поток данных. Информация ушла
 
+            writer.write("hello");
+
+
 //            InputStream inputStream = socket.getInputStream();
 //            OutputStream outputStream = socket.getOutputStream();
         }
