@@ -14,7 +14,7 @@ public class ServSocket {
             Scanner scanner = new Scanner(socket.getInputStream())){
 
             PrintWriter writer = new PrintWriter(socket.getOutputStream(), true); // отправляем поток данных. Информация ушла
-            //writer.println("hello");
+//            writer.println("hello");
             while(scanner.hasNext()){
                 String str = scanner.nextLine();
                 writer.println("you've send: " + str);
