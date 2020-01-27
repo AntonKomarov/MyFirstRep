@@ -6,7 +6,6 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class Tcp {
-
     public static void main(String[] args) {
         // india.colorado.edu:13
         try(Socket socket = new Socket()) {
@@ -19,7 +18,6 @@ public class Tcp {
             e.printStackTrace();
         }
     }
-
 }
 
 
