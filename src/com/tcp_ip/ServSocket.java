@@ -10,15 +10,14 @@ public class ServSocket {
 
     public static void main(String[] args) throws IOException {
         try(ServerSocket servSocket = new ServerSocket(8189);
-        Socket socket = servSocket.accept()){
+            Socket socket = servSocket.accept();
+            Scanner scanner = new Scanner(socket.getInputStream())){
 
-            Scanner scanner = new Scanner(socket.getInputStream()); // приходит поток данных. Информация пришла
             PrintWriter writer = new PrintWriter(socket.getOutputStream(), true); // отправляем поток данных. Информация ушла
+            writer.println("hello");
 
-            writer.write("hello");
 
-
-//            InputStream inputStream = socket.getInputStream();
+//            InputStream inputStream = socket.getInputStream(); // приходит поток данных. Информация пришла
 //            OutputStream outputStream = socket.getOutputStream();
         }
     }
