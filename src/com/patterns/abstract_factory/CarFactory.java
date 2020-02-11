@@ -1,6 +1,6 @@
 package com.patterns.abstract_factory;
 
-public class CarFactory {
+class CarFactory {
     public Car creator(String typeOfCar){
         switch (typeOfCar){
             case "Audi": return new Audi();

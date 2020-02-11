@@ -1,5 +1,5 @@
 package com.patterns.factory;
 
-public interface Car {
+interface Car {
     void drive();
 }

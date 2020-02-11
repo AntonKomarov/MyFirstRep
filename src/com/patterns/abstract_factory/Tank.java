@@ -1,5 +1,5 @@
 package com.patterns.abstract_factory;
 
-interface Car {
-    void drive();
+public interface Tank {
+    void fire();
 }
