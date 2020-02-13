@@ -30,7 +30,6 @@ public class Server {
             writer.write("Client №" + count + " your message's length is " + reader.readLine().length());
             writer.flush(); // команда гарантирует что команда будет отправлена
 
-
             //Формула приеняющаяся для отображения в chrome
 //            writer.write("HTTP/1.0 200 OK\n" +
 //                             "Content-type: text/html\n" +

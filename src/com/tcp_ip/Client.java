@@ -24,7 +24,6 @@ public class Client {
                 new InputStreamReader(clientSocketClient.getInputStream()));
         System.out.println(reader.readLine());
 
-
         writer.close();
         reader.close();
         clientSocketClient.close();
