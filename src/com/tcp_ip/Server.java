@@ -43,6 +43,5 @@ public class Server {
             clientSocketServer.close();
         }
 //        serverSocket.close();
-
     }
 }
