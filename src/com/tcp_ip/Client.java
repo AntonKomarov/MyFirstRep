@@ -25,7 +25,6 @@ public class Client {
         System.out.println(reader.readLine());
 
 
-
         writer.close();
         reader.close();
         clientSocketClient.close();
