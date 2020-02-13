@@ -36,7 +36,6 @@ public class Server {
 //                             "\n" +
 //                             "<h1>Yor are client #<h1>" + count);
 
-
             // если использовать на прямую поток Output мы сможем отправлять только по 1 байту или по массиву байтов
             // создание потока для отправки данных на serverSocket
             //clientSocket.getOutputStream().write(20); // 20 соответствует ?-в квадрате
