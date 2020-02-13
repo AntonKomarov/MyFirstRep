@@ -20,7 +20,6 @@ public class Server {
             Socket clientSocketServer = serverSocket.accept(); // клиент подключился
             System.out.println("Client accepted " + (++count));
 
-
             BufferedReader reader = new BufferedReader(
                     new InputStreamReader(clientSocketServer.getInputStream()));
 
