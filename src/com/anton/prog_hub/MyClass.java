@@ -5,7 +5,6 @@ class MyClass {
         int i = 2/3;
         System.out.println(i);
     }
-
     static {
         int i = 12;
         System.out.println(i + 100);
