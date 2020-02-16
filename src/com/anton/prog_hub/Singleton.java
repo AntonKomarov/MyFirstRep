@@ -9,7 +9,6 @@ class Singleton {
         return s;
     }
 }
-
 class Testt{
     public void method(){
         Singleton.getInstance();
