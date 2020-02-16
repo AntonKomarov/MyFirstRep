@@ -20,7 +20,6 @@ public class Aaa {
         a = new Aaa();
         return a;
     }
-
     public static void main(String[] args) {
         int x = 3;
         System.out.println(trippleValue(x)); // x = 9.0
