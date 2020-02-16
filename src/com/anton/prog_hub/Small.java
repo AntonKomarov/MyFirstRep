@@ -11,7 +11,6 @@ class Mediun extends Small{
         System.out.println("I'm a small");
         return 5;
     }
-
 //    public Integer growUp(){
 //        System.out.println("I'm not so big");
 //        return 5;
