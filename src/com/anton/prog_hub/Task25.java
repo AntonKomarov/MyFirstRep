@@ -6,7 +6,6 @@ class Y extends Task25{}
 class Ca {
     void doSomething() throws Y{}
 }
-
 class Da extends Ca{
     void doSomething() throws Y{}
 }
