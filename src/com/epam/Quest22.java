@@ -17,6 +17,8 @@ public class Quest22 {
             else{
                 System.out.println("false");
             }
+
+//            System.out.println(args[2]); IndexOutOfBoundsExeption
     }
 
     {
