@@ -1,5 +1,7 @@
 package com.epam.workbook;
 
+import com.epam.workbook.Account;
+
 public class TransferAction {
 
     private double transactionAmount;
@@ -12,5 +14,19 @@ public class TransferAction {
         }
     }
 
+    public boolean transferIntoAccount(Account from, Account to){
+        double demand = from.getAmount() - transactionAmount;
 
+        if (demand >= 0){
+            from.setAmount(demand);
+            to.addAmount(transactionAmount);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public double getTransactionAmount() {
+        return transactionAmount;
+    }
 }
