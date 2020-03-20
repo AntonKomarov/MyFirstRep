@@ -26,6 +26,5 @@ public class TransferAction {
     }
     public double getTransactionAmount() {
         return transactionAmount;
-
     }
 }
