@@ -16,7 +16,6 @@ public class TransferAction {
 
     public boolean transferIntoAccount(Account from, Account to){
         double demand = from.getAmount() - transactionAmount;
-
         if (demand >= 0){
             from.setAmount(demand);
             to.addAmount(transactionAmount);
