@@ -1,7 +1,5 @@
 package com.epam.workbook;
 
-import com.epam.workbook.Account;
-
 public class TransferAction {
 
     private double transactionAmount;
