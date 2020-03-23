@@ -23,7 +23,6 @@ public class TransferAction {
             return false;
         }
     }
-
     public double getTransactionAmount() {
         return transactionAmount;
     }
