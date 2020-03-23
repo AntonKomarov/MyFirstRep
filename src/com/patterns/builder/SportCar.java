@@ -28,8 +28,9 @@ class SportCar extends Object{
         private String color;
         private int maxSpeed;
 
-        Builder(String name){
+        protected Builder setName(String name){
             this.name = name;
+            return this;
         }
 
         protected Builder setColor(String color){
