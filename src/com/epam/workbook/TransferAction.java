@@ -13,7 +13,6 @@ public class TransferAction {
             throw new IllegalArgumentException();
         }
     }
-
     public boolean transferIntoAccount(Account from, Account to){
         double demand = from.getAmount() - transactionAmount;
         if (demand >= 0){
@@ -24,7 +23,7 @@ public class TransferAction {
             return false;
         }
     }
-    
+
     public double getTransactionAmount() {
         return transactionAmount;
     }
