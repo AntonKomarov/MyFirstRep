@@ -17,34 +17,33 @@ class SportCar extends Object{
         return maxSpeed;
     }
 
-    private SportCar(Builder builder){
-        this.name = builder.name;
-        this.color = builder.color;
-        this.maxSpeed = builder.maxSpeed;
+    private SportCar(){
     }
 
     static class Builder{
-        private String name;
-        private String color;
-        private int maxSpeed;
+        SportCar sportCar;
+
+        public Builder(){
+            sportCar = new SportCar();
+        }
 
         protected Builder setName(String name){
-            this.name = name;
+            sportCar.name = name;
             return this;
         }
 
         protected Builder setColor(String color){
-            this.color = color;
+            sportCar.color = color;
             return this;
         }
 
         protected Builder setMaxSpeed(int maxSpeed){
-            this.maxSpeed = maxSpeed;
+            sportCar.maxSpeed = maxSpeed;
             return this;
         }
 
         protected SportCar build(){
-            return new SportCar(this);
+            return sportCar;
         }
     }
 }
