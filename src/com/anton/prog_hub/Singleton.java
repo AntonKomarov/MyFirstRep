@@ -2,6 +2,7 @@ package com.anton.prog_hub;
 
 class Singleton {
     private static Singleton s = new Singleton();
+
     protected Singleton(){
         System.out.println("S");
     }
