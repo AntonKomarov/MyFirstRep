@@ -5,7 +5,6 @@ class Base {
         System.out.println("Base");
     }
 }
-
 class Derived extends Base{
     Derived(int i) {
         super(i);
