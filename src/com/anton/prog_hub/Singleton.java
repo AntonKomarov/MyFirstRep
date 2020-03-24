@@ -6,6 +6,7 @@ class Singleton {
     protected Singleton(){
         System.out.println("S");
     }
+
     public static Singleton getInstance(){
         return s;
     }
