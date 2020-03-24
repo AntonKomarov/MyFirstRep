@@ -9,7 +9,6 @@ class Derived extends Base{
     Derived(int i) {
         super(i);
     }
-
     public static void main(String[] args) {
         Derived d = new Derived(6);
     }
