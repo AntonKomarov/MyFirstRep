@@ -16,6 +16,7 @@ class Testt{
     public void method(){
         Singleton.getInstance();
     }
+
     public static void main(String[] str){
         new Testt();
         new Singleton();
