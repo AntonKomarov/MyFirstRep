@@ -1,6 +1,15 @@
 package com.example;
 
-public class HomeImplClass  extends HomeImpl implements Home{
+public class HomeImplClass  extends HomeImpl{
+
     @Override
-    public void text() { }
+    public void print() {
+        System.out.println("class print");
+
+    }
+
+    @Override
+    public void message() {
+
+    }
 }
