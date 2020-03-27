@@ -6,6 +6,5 @@ public class Run {
 
         home.print();
         home.text();
-
     }
 }
