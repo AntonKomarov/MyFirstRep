@@ -10,6 +10,7 @@ import javax.persistence.*;
 public class Contact {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Column
