@@ -28,5 +28,4 @@ public class Person {
     @Getter
     @Column
     private String patronymic;
-
 }
