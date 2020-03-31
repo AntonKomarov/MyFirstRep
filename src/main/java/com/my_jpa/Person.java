@@ -30,5 +30,4 @@ public class Person {
     private String patronymic;
 
 
-
 }
