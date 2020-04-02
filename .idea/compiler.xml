@@ -9,8 +9,8 @@
         <module name="MyFirstRep" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="MyFirstRep" target="1.5" />
+    <bytecodeTargetLevel target="11">
+      <module name="MyFirstRep" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
