@@ -13,5 +13,10 @@ class Medium extends Small{
 //        return 5;
 //    }
 
+//    public Float growUp(){
+//        System.out.println("I want to be bigger");
+//        return 5f;
+//    }
+
 
 }
