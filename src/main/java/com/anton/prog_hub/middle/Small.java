@@ -6,3 +6,12 @@ public class Small {
         return 5;
     }
 }
+
+class Medium extends Small{
+//    protected Integer growUp(int i) {
+//        System.out.println("I'm small");
+//        return 5;
+//    }
+
+
+}
