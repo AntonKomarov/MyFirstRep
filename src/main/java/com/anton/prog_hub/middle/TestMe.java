@@ -16,11 +16,6 @@ public class TestMe {
     public static void main(String[] args) {
         TestMe testMe = new TestMeOneMoreTime();
         System.out.println(testMe.variable);
-        System.out.println(i);
-
-        System.out.println(new TestMeOneMoreTime().variable);
-        TestMeOneMoreTime time = new TestMeOneMoreTime();
-        System.out.println(time.variable);
     }
 }
 
