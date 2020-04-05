@@ -21,5 +21,7 @@ public class DemoTreeSet {
         for (String str: hashSet) {
             System.out.println(str + " " + hashSet.hashCode());
         }
+
+        
        }
 }
