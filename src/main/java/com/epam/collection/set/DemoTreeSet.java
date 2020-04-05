@@ -1,4 +1,4 @@
-package com.epam;
+package com.epam.collection.set;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -21,7 +21,5 @@ public class DemoTreeSet {
         for (String str: hashSet) {
             System.out.println(str + " " + hashSet.hashCode());
         }
-
-        
        }
 }
