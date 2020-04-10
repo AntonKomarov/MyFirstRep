@@ -7,13 +7,13 @@ import java.util.Map;
 public class Practice {
 
     public static Map<String,String> ret(Map<String,String> map){
-        map.remove("c");
-        String valueA = map.get("a");
-        if(map.containsKey("b")){
-            map.replace("b", map.get("b"), valueA);
-        } else if (!(map.containsKey("b"))){
-            map.put("b", valueA);
-        }
+
+        if(map.containsKey("a") && map.containsKey("b")){
+            String valueA = map.get("a");
+            String valueB = map.get("b");
+            map.put("ab", (map.get("a") + map.get("b")));
+            return map;
+        } else
         return map;
     }
 
@@ -26,8 +26,8 @@ public class Practice {
 
     public static void main(String[] args) {
         Map<String, String> map = new HashMap<>(){{
-//            put("b", "candy");
-            put("c", "dirt");
+            put("a", "candy");
+            put("b", "dirt");
         }};
 
         printMap(ret(map));
