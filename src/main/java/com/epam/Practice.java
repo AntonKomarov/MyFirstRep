@@ -7,16 +7,12 @@ import java.util.Map;
 public class Practice {
 
     public static Map<String,String> ret(Map<String,String> map){
+        map.remove("c");
         String valueA = map.get("a");
-
-        if (!(map.containsKey("a"))) {
-            return map;
-        } else if(!(map.containsKey("b"))){
-            map.put("b", valueA);
-            map.replace("a", valueA, "");
-        } else if(map.containsKey("b")) {
+        if(map.containsKey("b")){
             map.replace("b", map.get("b"), valueA);
-            map.replace("a", valueA, "");
+        } else if (!(map.containsKey("b"))){
+            map.put("b", valueA);
         }
         return map;
     }
