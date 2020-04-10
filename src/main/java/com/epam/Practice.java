@@ -6,14 +6,17 @@ import java.util.Map;
 
 public class Practice {
 
-    public static Map<String,String> ret(Map<String,String> map){
-
-        if(map.containsKey("a") && map.containsKey("b")){
-            String valueA = map.get("a");
-            String valueB = map.get("b");
-            map.put("ab", (map.get("a") + map.get("b")));
-            return map;
+    public static Map<String,String> ret(Map<String,String> map) {
+        if(map.containsKey("ice cream")){
+            map.put("bread", "butter");
+            map.replace("ice cream", map.get("ice cream"), "cherry");
         } else
+        if (map.size() == 0){
+            map.put("bread", "butter");
+        } else
+            if(!(map.containsKey("ice cream"))){
+                map.put("bread", "butter");
+            }
         return map;
     }
 
@@ -26,7 +29,7 @@ public class Practice {
 
     public static void main(String[] args) {
         Map<String, String> map = new HashMap<>(){{
-            put("a", "candy");
+            put("ice cream", "candy");
             put("b", "dirt");
         }};
 
