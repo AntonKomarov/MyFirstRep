@@ -1,6 +1,7 @@
 package com.epam;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class Practice {
@@ -19,8 +20,17 @@ public class Practice {
         return map;
     }
 
+    public static Map<String,String> coll(Map<String,String> map) {
+        Iterator<Map.Entry<String,String>> iterator = map.entrySet().iterator();
+        if(map.containsKey("ice cream") && !(map.containsKey("yogurt"))){
+            map.put("yogurt", map.get("ice cream"));
+        }
+        return map;
+    }
+
+
     public static void main(String[] args) {
-        System.out.println(ret(new String[]{"hello", "hi", "Tanya", "hi"}));
+
 
     }
 }
