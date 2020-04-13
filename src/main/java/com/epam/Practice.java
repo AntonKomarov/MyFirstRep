@@ -25,6 +25,11 @@ public class Practice {
         if(map.containsKey("potato") && (map.containsKey("fries")))
             map.replace("fries",map.get("fries"), map.get("potato"));
 
+        if(map.containsKey("salad") && !(map.containsKey("spinach")))
+            map.put("spinach", map.get("salad"));
+        if(map.containsKey("salad") && (map.containsKey("spinach")))
+            map.replace("spinach",map.get("spinach"), map.get("salad"));
+
 
                 return map;
     }
