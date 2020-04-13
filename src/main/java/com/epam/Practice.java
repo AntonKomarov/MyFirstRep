@@ -26,7 +26,8 @@ public class Practice {
         if(map.containsKey("ice cream") && map.containsKey("yogurt")){
             map.replace("yogurt",map.get("yogurt"),map.get("ice cream"));
         }
-        return map;
+        map.replace("spinach", map.get("spinach"), "nuts");
+                return map;
     }
 
 
