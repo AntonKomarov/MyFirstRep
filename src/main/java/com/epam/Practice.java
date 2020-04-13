@@ -20,13 +20,12 @@ public class Practice {
     }
 
     public static Map<String,String> coll(Map<String,String> map) {
-        if(map.containsKey("ice cream") && !(map.containsKey("yogurt"))){
-            map.put("yogurt", map.get("ice cream"));
-        }
-        if(map.containsKey("ice cream") && map.containsKey("yogurt")){
-            map.replace("yogurt",map.get("yogurt"),map.get("ice cream"));
-        }
-        map.replace("spinach", map.get("spinach"), "nuts");
+        if(map.containsKey("potato") && !(map.containsKey("fries")))
+            map.put("fries", map.get("potato"));
+        if(map.containsKey("potato") && (map.containsKey("fries")))
+            map.replace("fries",map.get("fries"), map.get("potato"));
+
+
                 return map;
     }
 
