@@ -20,15 +20,15 @@ public class Practice {
     }
 
     public static Map<String,String> coll(Map<String,String> map) {
-       boolean a = map.containsKey("a");
-       boolean b = map.containsKey("b");
-        if(a && b){
-            if(map.get("a").equals(map.get("b"))){
-                map.remove("a");
-                map.remove("b");
-            }
-        }
-      return map;
+       if(((map.get("a")).length()) > (map.get("b").length())){
+           map.replace("c", map.get("c"), map.get("a"));
+       }
+
+       if(((map.get("a")).length()) < (map.get("b").length())){
+           map.replace("c", map.get("c"), map.get("b"));
+       }
+
+       return map;
     }
 
 
