@@ -36,9 +36,7 @@ public class Practice {
             map.put("spinach", map.get("salad"));
         if(salad && spinach)
             map.replace("spinach",map.get("spinach"), map.get("salad"));
-
-
-                return map;
+        return map;
     }
 
 
