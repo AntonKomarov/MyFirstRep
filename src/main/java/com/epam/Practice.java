@@ -26,16 +26,14 @@ public class Practice {
         boolean salad = map.containsKey("salad");
         boolean spinach = map.containsKey("spinach");
 
+        String saladValue = map.get("salad");
+        String potatoValue = map.get("potato");
 
-        if(potato && !fries)
-            map.put("fries", map.get("potato"));
-        if(potato && spinach)
-            map.replace("fries",map.get("fries"), map.get("potato"));
+        if(potato && !fries)  { map.put("fries", potatoValue);}
+        if(potato && spinach) { map.replace("fries", map.get("fries"), potatoValue);}
 
-        if(salad && !spinach)
-            map.put("spinach", map.get("salad"));
-        if(salad && spinach)
-            map.replace("spinach",map.get("spinach"), map.get("salad"));
+        if(salad && !spinach) { map.put("spinach", saladValue);}
+        if(salad && spinach) { map.replace("spinach", map.get("spinach"), saladValue);}
         return map;
     }
 
