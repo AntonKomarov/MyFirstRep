@@ -23,6 +23,9 @@ public class Practice {
         if(map.containsKey("ice cream") && !(map.containsKey("yogurt"))){
             map.put("yogurt", map.get("ice cream"));
         }
+        if(map.containsKey("ice cream") && map.containsKey("yogurt")){
+            map.replace("yogurt",map.get("yogurt"),map.get("ice cream"));
+        }
         return map;
     }
 
