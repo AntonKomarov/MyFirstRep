@@ -7,6 +7,7 @@
         <datasource-mapping>
           <factory-entry name="Entities" />
           <factory-entry name="JavaRush" />
+          <factory-entry name="MyFirstRep" />
           <factory-entry name="item-manager-pu" />
         </datasource-mapping>
         <naming-strategy-map />
