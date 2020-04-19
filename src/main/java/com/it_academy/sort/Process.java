@@ -28,14 +28,14 @@ public class Process {
             Iterator<String> iterator = peoples.iterator();
             int count = 0;
             while (iterator.hasNext()){
-                count++;
-                iterator.next();
-                if (count % 2 == 0) {
-                    iterator.remove();
-                }
+                    count++;
+                    iterator.next();
+                    if (count % 2 == 0) {
+                        iterator.remove();
+                    }
             }
             if(peoples.size() != 1)
-                process(peoples);
+                return process(peoples);
             System.out.println(peoples);
             return peoples.toString();
         }
