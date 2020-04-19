@@ -12,18 +12,19 @@ public class Process {
         while (iterator.hasNext()){
             count++;
             iterator.next();
-            if (count % 2 == 0) {
-                iterator.remove();
-            }
+            if (count % 2 == 0) {iterator.remove();}
         }
-        if(peoples.size() != 1)
-            return process(peoples);
-        System.out.println(peoples);
+        print(peoples);
+        if(peoples.size() != 1) {return process(peoples);}
         return peoples.toString();
     }
 
+    public static void print(List<String> list){
+        System.out.println(list);
+    }
+
         public static void main(String[] args) {
-        ArrayList<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<>();
         list.add("Anton");
         list.add("Tanya");
         list.add("Lera");
@@ -33,7 +34,8 @@ public class Process {
         list.add("Sasha");
         process(list);
 
-            LinkedList<String> list1 = new LinkedList<>();
+
+            List<String> list1 = new LinkedList<>();
             list1.add("Anton");
             list1.add("Tanya");
             list1.add("Lera");
