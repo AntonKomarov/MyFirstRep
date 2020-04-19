@@ -3,41 +3,24 @@ package com.it_academy.sort;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Process {
-        static String process(ArrayList<String> peoples){
-            System.out.println(peoples);
-            Iterator<String> iterator = peoples.iterator();
-            int count = 0;
-            while (iterator.hasNext()){
-                count++;
-                iterator.next();
-                if (count % 2 == 0) {
-                    iterator.remove();
-                }
+    public static String process(List<String> peoples){
+        Iterator<String> iterator = peoples.iterator();
+        int count = 0;
+        while (iterator.hasNext()){
+            count++;
+            iterator.next();
+            if (count % 2 == 0) {
+                iterator.remove();
             }
-            if(peoples.size() != 1)
-                return process(peoples);
-            System.out.println(peoples);
-            return peoples.toString();
         }
-
-        static String process(LinkedList<String> peoples){
-            System.out.println(peoples);
-            Iterator<String> iterator = peoples.iterator();
-            int count = 0;
-            while (iterator.hasNext()){
-                    count++;
-                    iterator.next();
-                    if (count % 2 == 0) {
-                        iterator.remove();
-                    }
-            }
-            if(peoples.size() != 1)
-                return process(peoples);
-            System.out.println(peoples);
-            return peoples.toString();
-        }
+        if(peoples.size() != 1)
+            return process(peoples);
+        System.out.println(peoples);
+        return peoples.toString();
+    }
 
         public static void main(String[] args) {
         ArrayList<String> list = new ArrayList<>();
