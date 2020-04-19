@@ -9,17 +9,16 @@ public class Process {
             System.out.println(peoples);
             Iterator<String> iterator = peoples.iterator();
             int count = 0;
-            while (iterator.hasNext() && peoples.size() > 1){
+            while (iterator.hasNext()){
                 count++;
                 iterator.next();
                 if (count % 2 == 0) {
                     iterator.remove();
                 }
             }
+            if(peoples.size() != 1)
+                return process(peoples);
             System.out.println(peoples);
-            if (peoples.size() != 1){
-                process(peoples);
-            }
             return peoples.toString();
         }
 
@@ -41,15 +40,15 @@ public class Process {
         }
 
         public static void main(String[] args) {
-//        ArrayList<String> list = new ArrayList<>();
-//        list.add("Anton");
-//        list.add("Tanya");
-//        list.add("Lera");
-//        list.add("Olga");
-//        list.add("Katya");
-//        list.add("Larisa");
-//        list.add("Sasha");
-//        procces(list);
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Anton");
+        list.add("Tanya");
+        list.add("Lera");
+        list.add("Olga");
+        list.add("Katya");
+        list.add("Larisa");
+        list.add("Sasha");
+        process(list);
 
             LinkedList<String> list1 = new LinkedList<>();
             list1.add("Anton");
