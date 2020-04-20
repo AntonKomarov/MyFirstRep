@@ -30,7 +30,6 @@ public class Process {
         list.add("Katya");
         list.add("Larisa");
             list.add("Olga");
-
             list.add("Sasha");
         process(list);
 
