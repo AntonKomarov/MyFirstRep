@@ -29,7 +29,9 @@ public class Process {
         list.add("Lera");
         list.add("Katya");
         list.add("Larisa");
-        list.add("Sasha");
+            list.add("Olga");
+
+            list.add("Sasha");
         process(list);
 
 
