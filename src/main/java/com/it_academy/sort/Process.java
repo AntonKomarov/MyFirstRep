@@ -6,8 +6,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Process {
-    public static String process(List<String> peoples){
-        Iterator<String> iterator = peoples.iterator();
+    public static String process(List<? extends String> peoples){
+        Iterator<? extends String> iterator = peoples.iterator();
         int count = 0;
         while (iterator.hasNext()){
             count++;
@@ -19,7 +19,7 @@ public class Process {
         return peoples.toString();
     }
 
-    public static void print(List<String> list){
+    public static void print(List<? extends String> list){
         System.out.println(list);
     }
 
