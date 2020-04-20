@@ -25,7 +25,6 @@ public class Process {
 
         public static void main(String[] args) {
         List<String> list = new ArrayList<>();
-        list.add("Anton");
         list.add("Tanya");
         list.add("Lera");
         list.add("Olga");
