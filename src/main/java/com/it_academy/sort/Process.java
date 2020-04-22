@@ -33,11 +33,11 @@ public class Process {
         list.add("Sasha");
         process(list);
 
-            List<String> list1 = new LinkedList<>();
-            list1.add("Anton");
-            list1.add("Tanya");
-            list1.add("Lera");
-            list1.add("Olga");
+        List<String> list1 = new LinkedList<>();
+        list1.add("Anton");
+        list1.add("Tanya");
+        list1.add("Lera");
+        list1.add("Olga");
             list1.add("Katya");
             list1.add("Larisa");
             list1.add("Sasha");
