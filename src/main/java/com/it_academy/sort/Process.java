@@ -42,14 +42,14 @@ public class Process {
         list1.add("Larisa");
         list1.add("Sasha");
         list1.add("Anton");
-            list1.add("Tanya");
-            list1.add("Lera");
-            list1.add("Olga");
-            list1.add("Katya");
-            list1.add("Larisa");
-            list1.add("Sasha");
-            System.out.println(list1);
-            process(list1);
+        list1.add("Tanya");
+        list1.add("Lera");
+        list1.add("Olga");
+        list1.add("Katya");
+        list1.add("Larisa");
+        list1.add("Sasha");
+        System.out.println(list1);
+        process(list1);
         }
     }
 
