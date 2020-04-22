@@ -51,5 +51,5 @@ public class Process {
         System.out.println(list1);
         process(list1);
         }
-    }
+}
 
