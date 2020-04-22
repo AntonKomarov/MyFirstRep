@@ -33,7 +33,6 @@ public class Process {
         list.add("Sasha");
         process(list);
 
-
             List<String> list1 = new LinkedList<>();
             list1.add("Anton");
             list1.add("Tanya");
