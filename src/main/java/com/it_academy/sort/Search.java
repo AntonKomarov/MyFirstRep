@@ -16,6 +16,4 @@ public class Search {
         }
         return index;
     }
-
-
 }
