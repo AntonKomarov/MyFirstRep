@@ -9,11 +9,6 @@ public class SortArray{
         List<Integer> list = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
 
-        fromMaxToMin(list,scanner);
-        System.out.println(list);
-    }
-
-    public static List<Integer> fromMaxToMin(List<Integer> list, Scanner scanner){
         int posZero=0;
         for(;;) {
             String word = scanner.next();
@@ -25,6 +20,7 @@ public class SortArray{
             if(i > 0) list.add(posZero++, i);
             if(i == 0) list.add(list.size()/2, i);
         }
-        return list;
+
+        System.out.println(list);
     }
 }
