@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class SortArray{
-
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
@@ -20,7 +19,6 @@ public class SortArray{
             if(i > 0) list.add(posZero++, i);
             if(i == 0) list.add(list.size()/2, i);
         }
-
         System.out.println(list);
     }
 }
