@@ -3,7 +3,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class SortArray {
+public class SortArray{
+
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
@@ -15,6 +16,8 @@ public class SortArray {
 //    public String toString(){
 //        return
 //    }
+
+
 
     public static List<Integer> fromMaxToMin(List<Integer> list, Scanner scanner){
         int posZero=0;
