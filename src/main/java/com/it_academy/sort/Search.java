@@ -4,7 +4,6 @@ public class Search {
     public static void main(String[] args) {
        int[] array  = new int[]{40,30,50,10,60,90,80,70};
     }
-
     public static int binarySearch(int[] array, int key, int left, int right) {
         int index = -1;
         while (left <= right) {
