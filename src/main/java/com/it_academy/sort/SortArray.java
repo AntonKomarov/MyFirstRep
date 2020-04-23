@@ -12,12 +12,6 @@ public class SortArray{
         fromMaxToMin(list,scanner);
         System.out.println(list);
     }
-//    @Override
-//    public String toString(){
-//        return
-//    }
-
-
 
     public static List<Integer> fromMaxToMin(List<Integer> list, Scanner scanner){
         int posZero=0;
