@@ -7,7 +7,6 @@ public class SortArray{
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
-
         int posZero=0;
         for(;;) {
             String word = scanner.next();
