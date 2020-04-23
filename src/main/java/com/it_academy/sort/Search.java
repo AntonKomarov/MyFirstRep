@@ -7,7 +7,6 @@ public class Search {
 
     public static int binarySearch(int[] array, int key, int left, int right) {
         int index = -1;
-
         while (left <= right) {
             int middle = (left + right) / 2;
             if      (array[middle] <  key)  { left  = middle + 1; }
