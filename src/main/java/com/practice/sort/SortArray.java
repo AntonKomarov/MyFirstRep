@@ -1,4 +1,4 @@
-package com.it_academy.sort;
+package com.practice.sort;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;

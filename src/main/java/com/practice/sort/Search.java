@@ -1,4 +1,4 @@
-package com.it_academy.sort;
+package com.practice.sort;
 
 public class Search {
     public static void main(String[] args) {
