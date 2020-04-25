@@ -13,7 +13,8 @@ public class Task1 {
         double sqrt = Math.sqrt(-4);
         System.out.println(sqrt + 1);
         if (Double.isNaN(sqrt)) {
-            System.out.println("So sad"); }
+            System.out.println("So sad");
+        }
         System.out.println(Double.NaN == sqrt);
         String costForPrint = "5$";
         System.out.println("Цена только для вас " +
