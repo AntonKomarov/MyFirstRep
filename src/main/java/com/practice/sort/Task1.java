@@ -2,8 +2,7 @@ package com.practice.sort;
 
 public class Task1 {
     public static void main(String[] args) {
-        if(null instanceof String){
-            System.out.println("instanceof true"); }
+        if(null instanceof String){ System.out.println("instanceof true"); }
         float amount = 1.0000005F;
         float avalue = 0.0000004F;
         float result = amount - avalue;
