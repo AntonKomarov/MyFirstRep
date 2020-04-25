@@ -22,7 +22,8 @@ public class Task1 {
     }
     public static String getCurrencyName(char symbol) {
         if (symbol == '$') {
-            return " долларов"; }
+            return " долларов";
+        }
         else {
             throw new UnsupportedOperationException("Not implemented yet");
         }
