@@ -21,7 +21,8 @@ public class Task1 {
                 + costForPrint.charAt(0) + getCurrencyName(costForPrint.charAt(1)));
     }
     public static String getCurrencyName(char symbol) {
-        if (symbol == '$') { return " долларов"; }
+        if (symbol == '$') {
+            return " долларов"; }
         else {
             throw new UnsupportedOperationException("Not implemented yet");
         }
