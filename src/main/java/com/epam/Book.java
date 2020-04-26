@@ -1,8 +1,7 @@
 package com.epam;
 
 class Book {
-    Book(String s){
-    }
+    Book(String s){ }
     private String book;
     public void setBook(String boo){
         book = boo;
