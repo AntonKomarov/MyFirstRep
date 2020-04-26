@@ -2,7 +2,6 @@ package com.epam;
 
 class Book {
     Book(String s){
-
     }
     private String book;
     public void setBook(String boo){
