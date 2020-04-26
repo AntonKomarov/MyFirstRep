@@ -17,6 +17,4 @@ class DF extends Book{
         String s2 = "Test";
         System.out.println(s1 == s2);
     }
-
-
 }
