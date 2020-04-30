@@ -12,5 +12,3 @@ public abstract class Class {
 }
 
 class Be extends Class{}
-
-class Ae extends Class{}
