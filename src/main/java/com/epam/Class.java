@@ -6,7 +6,5 @@ public abstract class Class {
     private final int r = 8;
     protected int t = 0;
     public static void main(String[] args) {
-
-
     }
 }
