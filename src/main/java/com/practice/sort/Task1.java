@@ -8,7 +8,6 @@ public class Task1 {
         float avalue = 0.0000004F;
         float result = amount - avalue;
         System.out.println(result);
-
         double sqrt = Math.sqrt(-4);
         System.out.println(sqrt + 1);
         if (Double.isNaN(sqrt)) { System.out.println("So sad"); }
