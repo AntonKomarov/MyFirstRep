@@ -19,7 +19,8 @@ public class Task1 {
             return " долларов";
         }
         else {
-            throw new UnsupportedOperationException("Not implemented yet"); }
+            throw new UnsupportedOperationException("Not implemented yet");
+        }
     }
 }
 
