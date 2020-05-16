@@ -3,7 +3,8 @@ package com.epam;
 class Book {
     Book(String s){ }
     private String book;
-    public void setBook(String boo){ book = book; }
+    public void setBook(String boo){ book = book;
+    }
 }
 class DF extends Book{
     DF(String s) {
