@@ -14,6 +14,7 @@ public class DemoHashMap {
         };
         System.out.println(hashMap);
         hashMap.put("Пряник", 4);
+
         System.out.println(hashMap + " после замены элемента");
         Integer a = hashMap.get("Хлеб");
         System.out.println(a + " - найдет по ключу 'Хлеб' ");
