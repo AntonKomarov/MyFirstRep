@@ -7,7 +7,8 @@ enum GasStation{
     DT(50),
     A80(30),
     A92(30),
-    A95(50), GAS(40);
+    A95(50),
+    GAS(40);
 
     private Integer maxVolume;
     private GasStation(int maxVolume){
