@@ -10,6 +10,7 @@ enum GasStation{
     GAS(40);
 
     private Integer maxVolume;
+
     private GasStation(int maxVolume){
         this.maxVolume = maxVolume;
     }
