@@ -4,7 +4,8 @@ package com.epam.collection.map;
 import java.util.EnumMap;
 
 enum GasStation{
-    DT(50), A80(30), A92(30), A95(50), GAS(40);
+    DT(50),
+    A80(30), A92(30), A95(50), GAS(40);
 
     private Integer maxVolume;
     private GasStation(int maxVolume){
