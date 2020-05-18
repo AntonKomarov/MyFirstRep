@@ -1,6 +1,5 @@
 package com.epam.collection.map;
 
-
 import java.util.EnumMap;
 
 enum GasStation{
