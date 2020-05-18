@@ -27,6 +27,5 @@ public class DemoHashMap {
         }
         Set<Integer> set1 = new HashSet<>(hashMap.values());
         System.out.println(set1);
-
     }
 }
