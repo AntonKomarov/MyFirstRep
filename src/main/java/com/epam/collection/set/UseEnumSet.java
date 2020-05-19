@@ -13,6 +13,7 @@ public class UseEnumSet {
 
         System.out.println(japanAuto);
         System.out.println(other);
+
         action("audi", japanAuto);
         action("suzuki", japanAuto);
     }
