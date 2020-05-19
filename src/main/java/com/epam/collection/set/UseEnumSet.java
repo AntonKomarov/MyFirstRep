@@ -21,8 +21,7 @@ public class UseEnumSet {
         boolean ok = false;
         if(ok = enumSet.contains(manufacturer)){
             System.out.println("Обработан: " + manufacturer);
-        } else {
-            System.out.println("Обработка невозможна: " + manufacturer); }
+        } else { System.out.println("Обработка невозможна: " + manufacturer); }
         return ok;
     }
 }
