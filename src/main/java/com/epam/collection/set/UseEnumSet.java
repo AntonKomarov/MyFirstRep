@@ -19,8 +19,7 @@ public class UseEnumSet {
     public static boolean action(String auto, EnumSet<CarManufacturer> enumSet){
         CarManufacturer manufacturer = CarManufacturer.valueOf(auto.toUpperCase());
         boolean ok = false;
-        if(ok = enumSet.contains(manufacturer)){
-            System.out.println("Обработан: " + manufacturer);
+        if(ok = enumSet.contains(manufacturer)){ System.out.println("Обработан: " + manufacturer);
         } else { System.out.println("Обработка невозможна: " + manufacturer); }
         return ok;
     }
