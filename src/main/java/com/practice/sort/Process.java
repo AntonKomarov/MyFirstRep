@@ -24,32 +24,14 @@ public class Process {
     }
 
         public static void main(String[] args) {
-        List<String> list = new ArrayList<>();
-        list.add("Tanya");
-        list.add("Lera");
-        list.add("Katya");
-        list.add("Larisa");
-        list.add("Olga");
-        list.add("Sasha");
-        process(list);
-
-        List<String> list1 = new LinkedList<>();
-        list1.add("Anton");
-        list1.add("Tanya");
-        list1.add("Lera");
-        list1.add("Olga");
-        list1.add("Katya");
-        list1.add("Larisa");
-        list1.add("Sasha");
-        list1.add("Anton");
-        list1.add("Tanya");
-        list1.add("Lera");
-        list1.add("Olga");
-        list1.add("Katya");
-        list1.add("Larisa");
-        list1.add("Sasha");
-        System.out.println(list1);
-        process(list1);
+            List<String> list = new ArrayList<>();
+            list.add("Tanya");
+            list.add("Lera");
+            list.add("Katya");
+            list.add("Larisa");
+            list.add("Olga");
+            list.add("Sasha");
+            process(list);
         }
 }
 
